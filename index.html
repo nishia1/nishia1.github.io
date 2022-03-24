@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Final Project!</title>
+    <title>Environmental Summit</title>
     <style>
       .parallax{
         background-image:url("https://www.manatt.com/Manatt/media/Media/Images/Standard%20Practice/green_forest_background_in_a_sunny_day_3.jpg");
-        min-height:600px;
+        min-height:400px;
         background-attachment:fixed;
         background-position:center;
         background-repeat:no-repeat;
         background-size:cover;
       }
       .parallax2{
-        background-image:url("https://i.imgur.com/oUGPY8W.png");
+        background-image:url("https://wallup.net/wp-content/uploads/2017/03/29/477916-photography-simple_background-nature-748x468.jpg");
         min-height:600px;
         background-attachment:fixed;
         background-position:center;
         background-repeat:no-repeat;
         background-size:cover;
-        display:none;
       }
       .block{
         text-align:center;
@@ -32,13 +31,12 @@
         width:100%;
         top:300px;
       }
-.text{
-        color:Black;
-        background-color: #cdfecd; 
+      .text{
+        color:Pink;
         font-size:30pt;
         font-weight:bold;
         letter-spacing:3px;
-        border:2px #cdfecd solid;
+        border:2px pink solid;
         padding:20px;
       }
       .text2{
@@ -49,48 +47,20 @@
         text-align:center;
       }
     </style>
-    <script>    
-      function surprise(){
-        document.getElementById("parallax2").style.display = "block";
-      }
-      function addItem(){
-        var newItem = document.createElement("div");
-        newItem.innerHTML = document.getElementById("box").value;
-        newItem.onclick = deleteItem;
-        document.getElementById("list").appendChild(newItem);
-      }
-      function deleteItem(){
-        document.getElementById("list").removeChild(this);
-      }
-      function hide(){
-        document.getElementById("parallax2").style.display = "none";
-      }
-    </script>
 </head>
   
-  <body>
+<body>
     <div class="parallax">
       
       <div class="block">
-        <span class="text">Welcome to my Website</span>
+        <span class="text">Environmental Summit</span>
       </div>
       
-      
-      <div class="block2">
-        <span class="text2" onclick="surprise();">Click for a surpise!</span>
-      </div>  
-      
     </div>
     
-    <div class="parallax2 textcenter" id="parallax2">
-      <br><br>
-      <p>My secret list!</p>
-      <input id="box" type="text" value="Type a task here"/> <br/>
-      <input type="button" value="Click to Add Item" onclick="addItem();"/>
-    
-      <div id="list"></div>
-      <input type="button" value="Hide List" onclick="hide();">
-    
+    <div class = "parallax2">
+      <h1> welcome!! </h1>
     </div>
-  <body>
+  
+<body>
 </html>
