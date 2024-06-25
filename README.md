@@ -1,2 +1,2 @@
 # nishia1.github.io
-This is my project for TSA Webmaster.
+personal portfolio... when i get to it.
